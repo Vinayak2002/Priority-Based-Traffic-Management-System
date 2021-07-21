@@ -2,7 +2,7 @@
 
 ## WebSite
 
-### Getting to website dir:
+### Getting to website dir :
 ```bash
 cd website
 ```
