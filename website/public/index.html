@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Traffic status</title>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500">
+    <header class="flex flex-row justify-between space-x-4 bg-white py-6 px-6">
+        <a href="#" class="block">
+          <span class="sr-only">themes.dev</span>
+          <img class="h-8" src="https://image.flaticon.com/icons/png/512/1545/1545926.png" alt="Themes.dev Logo" title="Themes.dev Logo">
+        </a>
+        <nav class="flex space-x-4 font-semibold ...">
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="py-10 ">
+        <p class="text-white font-mono text-6xl subpixel-antialiased font-semibold text-center bg-white">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+                Priority Based Traffic Management System
+            </span>
+
+        </p>
+    </div>
+    <div class="container mx-auto px-2 py-1">
+        <div class="w-1/3 mx-auto">
+            <div class="bg-white shadow-md rounded my-6 text-3xl">
+              <table class="text-left w-full border-collapse"> <!--Border collapse doesn't work on this site yet but it's available in newer tailwind versions -->
+                <thead>
+                  <tr>
+                    <th class="py-4 px-6 bg-grey-lightest font-bold text-grey-dark border-b border-grey-light bg-gray-200">LANE</th>
+                    <th class="py-4 px-6 bg-grey-lightest font-bold text-grey-dark border-b border-grey-light bg-gray-200">STATUS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-grey-lighter">
+                    <td class="py-4 px-6 border-b border-grey-light">Lane 1</td>
+                    <td class="py-4 px-6 border-b border-grey-light">
+                      <!-- <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green-400 hover:bg-green-dark invisible">Low</a> -->
+                      <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded bg-yellow-400 hover:bg-blue-dark" id="lane-one">Mid</a>
+                      <!-- <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-red-400 hover:bg-green-dark">High</a> -->
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-grey-lighter">
+                    <td class="py-4 px-6 border-b border-grey-light">Lane 2</td>
+                    <td class="py-4 px-6 border-b border-grey-light">
+                        <!-- <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green-400 hover:bg-green-dark invisible">Low</a> -->
+                        <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded bg-yellow-400 hover:bg-blue-dark" id="lane-two">Mid</a>
+                        <!-- <a href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-red-400 hover:bg-green-dark invisible">High</a> -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+    </div>
+    <!-- Cards at the end -->
+    <div id="container" class="w-4/5 mx-auto py-10 ">
+      <div class="flex flex-col sm:flex-row">
+        <!-- Card 1 -->
+        <div class="sm:w-1/4 p-2">
+          <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+            <div class="mb-3">
+              <img
+                class="w-auto mx-auto rounded-full"
+                src="https://media-exp1.licdn.com/dms/image/C5603AQEH3B29QxN7bw/profile-displayphoto-shrink_800_800/0/1608467861803?e=1632355200&v=beta&t=YixMqdeGuxBz4tipJinjdJE1bq1DBSVDShYSsWDYEJI"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-medium text-gray-700">Anisha Agrawal</h2>
+            <span class="text-blue-500 block mb-5">Sem-2 CSE IIIT NR</span>
+  
+            <a href="https://github.com/anisha1208" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+              >GitHub</a
+            >
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="sm:w-1/4 p-2">
+          <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+            <div class="mb-3">
+              <img
+                class="w-auto mx-auto rounded-full"
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQH8whcg0Gs9NA/profile-displayphoto-shrink_800_800/0/1608555162183?e=1632355200&v=beta&t=Lx9eTpvIMXehWlqugMi24uWFXjBpuUwYLursBG23Gac"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-medium text-gray-700">Dhaval Kumar</h2>
+            <span class="text-blue-500 block mb-5">Sem-2 CSE IIIT NR</span>
+  
+            <a href="https://github.com/still-n0thing" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+              >GitHub</a
+            >
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="sm:w-1/4 p-2">
+          <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+            <div class="mb-3">
+              <img
+                class="w-auto mx-auto rounded-full"
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQGGh8X6QOFm-g/profile-displayphoto-shrink_800_800/0/1614655111589?e=1632355200&v=beta&t=kPkIpcSBykj-BFaphCXKJPEmJ8VA1xgeLfq3Z2EQWrg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-medium text-gray-700">Kushal Jain</h2>
+            <span class="text-blue-500 block mb-5">Sem-2 CSE IIIT NR</span>
+  
+            <a href="https://github.com/kushaljain0" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+              >GitHub</a
+            >
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="sm:w-1/4 p-2">
+          <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+            <div class="mb-3">
+              <img
+                class="w-auto mx-auto rounded-full"
+                src="https://secure.gravatar.com/avatar/4a9c5eb3db6e4320b0d92101026b8bdb?s=600&d=mm&r=g"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-medium text-gray-700">Vinayak Shrivastava</h2>
+            <span class="text-blue-500 block mb-5">Sem-2 CSE IIIT NR</span>
+  
+            <a href="https://github.com/Vinayak2002" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-white relative pt-1 border-b-2 border-blue-700">
+      <div class="container mx-auto px-6">
+  
+          <div class="sm:flex sm:mt-8">
+              <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+                  <div class="flex flex-col">
+                      <span class="font-bold text-gray-700 uppercase mb-2">Footer header 1</span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                  </div>
+                  <div class="flex flex-col">
+                      <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Footer header 2</span>
+                      <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">link 1</a></span>
+                  </div>
+                  <div class="flex flex-col">
+                      <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Footer header 3</span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                      <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container mx-auto px-6">
+          <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
+              <div class="sm:w-2/3 text-center py-6">
+                  <p class="text-sm text-blue-700 font-bold mb-2">
+                      © 2021 MIT LICENSE
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="client.js"></script>
+</body>
+</html>
